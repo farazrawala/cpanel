@@ -1,19 +1,4 @@
-<?php include"header.php"; ?>
 
-            
-        <section class="banner about-ban services-ban">
-            <div class="container">
-                <div class="row">
-                    <h2>Contact Us</h2>
-                    <p>Set a meeting with our professionals or
-call us today to discuss your project 
-with our team of industry-proven professionals</p>
-
-                </div>
-            </div>
-        </section>
-        
-        
         
  
 <section class="contact-us">
