@@ -15,8 +15,8 @@ jobs:
         - name: Deploy file
           uses: wlixcc/SFTP-Deploy-Action@v1.2.4
           with:
-              username: dev@ecomstorexpertz.com
-              server: ecomstorexpertz.com
+              ftp-username: dev@ecomstorexpertz.com
+              ftp-server: ecomstorexpertz.com
               local_path: './*'
               remote_path: '/'
-              password: dLLqF{h^!o!@
+              ftp-password: dLLqF{h^!o!@
