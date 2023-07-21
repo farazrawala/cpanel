@@ -15,8 +15,8 @@ jobs:
         - name: Deploy file
           uses: wlixcc/SFTP-Deploy-Action@v1.2.4
           with:
-              username: dev@logooctane.com
-              server: 168.235.117.214
+              username: dev@ecomstorexpertz.com
+              server: ecomstorexpertz.com
               local_path: './*'
               remote_path: '/'
-              password: ke}4y4c1UEsu
+              password: dLLqF{h^!o!@
