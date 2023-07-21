@@ -6,17 +6,19 @@ on:
       - main
 
 jobs:
-  deploy:
+  deploy_job:
     runs-on: ubuntu-latest
-
+    name: deploy
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+        - name: Checkout
+          uses: actions/checkout@v2
 
-      - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.1.2
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /
+        - name: Deploy file
+          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+          with:
+              username: ${{ secrets.FTP_USERNAME }}
+              server: ${{ secrets.FTP_SERVER }}
+              local_path: './*'
+              remote_path: '/'
+              sftp_only: true
+              password: ${{ secrets.FTP_PASSWORD }}
